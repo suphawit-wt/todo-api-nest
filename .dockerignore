@@ -1,0 +1,35 @@
+# Ignore other unnecessary files
+.git/
+.github/
+.devcontainer/
+.gitignore
+README.md
+LICENSE
+
+# Ignore Docker-related files
+.dockerignore
+Dockerfile
+Dockerfile.*
+compose.yaml
+compose.yml
+docker-compose*.yaml
+docker-compose*.yml
+
+# Environments
+.env
+.env.*
+
+# Ignore node_modules and PNPM store directories
+node_modules/
+.pnpm-store/
+
+# Ignore development and build files
+test/
+dist/
+*.log
+npm-debug.log*
+.prettierrc
+.eslintrc.*
+
+# Ignore test and coverage artifacts
+coverage

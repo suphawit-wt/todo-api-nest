@@ -1,0 +1,16 @@
+{
+    "name": "Todo API NestJS",
+    "dockerComposeFile": "../compose.yaml",
+    "service": "app",
+    "workspaceFolder": "/app",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.vscode-typescript-next",
+                "ms-azuretools.vscode-docker",
+                "github.vscode-github-actions",
+                "aaron-bond.better-comments"
+            ]
+        }
+    }
+}

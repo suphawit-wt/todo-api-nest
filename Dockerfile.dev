@@ -1,0 +1,16 @@
+FROM node:20.5-slim
+
+WORKDIR /app
+
+COPY . .
+
+RUN apt-get update && apt-get install -y procps
+RUN npm install -g pnpm
+
+EXPOSE 3000
+
+ENV NODE_ENV=development
+ENV TYPEORM_ENTITIES "src/**/*.entity.{ts,js}"
+ENV TYPEORM_MIGRATIONS "src/migrations/*.{ts,js}"
+
+CMD ["sleep", "infinity"]
