@@ -1,5 +1,5 @@
 # Build stage
-FROM node:20.5-slim as builder
+FROM node:20.13-slim as builder
 
 WORKDIR /app
 
@@ -13,7 +13,7 @@ COPY . .
 RUN pnpm build
 
 # Run stage
-FROM node:20.5-slim as runner
+FROM node:20.13-slim as runner
 
 WORKDIR /app
 
